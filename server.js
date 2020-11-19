@@ -1,12 +1,16 @@
-const fastify = require('fastify')({ logger: true })
+import fastify from 'fastify';
 
-fastify.get('/', async (req, reply) => {
+const port = process.env.PORT || 5000;
+
+const app = fastify({ logger: true });
+
+app.get('/', async (req, reply) => {
   return { hello: 'world' };
 })
 
 const start = async () => {
   try {
-    await fastify.listen(process.env.PORT || 5000);
+    await app.listen(port);
   } catch (err) {
     console.error(err);
     process.exit(1);
