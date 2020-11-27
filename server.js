@@ -1,6 +1,8 @@
 import fastify from 'fastify';
 import dotenv from 'dotenv';
-import { Client } from 'pg';
+import pkg from 'pg';
+
+const { Client } = pkg;
 
 dotenv.config();
 const port = process.env.PORT || 3000;
