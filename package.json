@@ -1,5 +1,5 @@
 {
-  "name": "backend-project-lvl4",
+  "name": "@eifory/backend-project-lvl4",
   "version": "1.0.0",
   "description": "ToDo manager",
   "main": "index.js",
@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "fastify": "^3.8.0"
+    "fastify": "^3.8.0",
+    "pg": "^8.5.1"
   }
 }
