@@ -4,7 +4,7 @@
   "description": "ToDo manager",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node ./src/server.js",
     "test": "npx -n --experimental-vm-modules jest"
   },
   "type": "module",
@@ -32,6 +32,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "fastify": "^3.8.0",
-    "pg": "^8.5.1"
+    "pg": "^8.5.1",
+    "pug": "^3.0.0"
   }
 }
