@@ -1,17 +1,18 @@
 import fastify from 'fastify';
 import dotenv from 'dotenv';
 
-import addRoutes from './routes/index.js';
-
 dotenv.config();
+
 const port = process.env.PORT || 3000;
 const host = process.env.HOST;
 
-const app = fastify({ logger: true });
+const app = fastify({
+  logger: true,
+});
 
-app.get('/', async (req, reply) => {
+app.get('/', async (req, res) => {
   return { hello: 'world' };
-})
+});
 
 const start = async () => {
   try {
@@ -22,11 +23,4 @@ const start = async () => {
   }
 }
 
-export default () => {
-  const app = fastify({
-    logger: true,
-  });
-  addRoutes(app);
-  
-  return app;
-}
+start();
