@@ -1,4 +1,9 @@
-node_modules
-
-# dotenv environment variables file
+.idea/
+.vscode/
+node_modules/
+build/
+dist/
+tmp/
+temp/
+database.sqlite
 .env
