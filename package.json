@@ -2,7 +2,7 @@
   "name": "@eifory/backend-project-lvl4",
   "version": "1.0.0",
   "description": "ToDo manager",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "start": "node ./src/server.js",
     "test": "npx -n --experimental-vm-modules jest"

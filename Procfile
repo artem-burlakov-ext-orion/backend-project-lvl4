@@ -1,1 +1,2 @@
-web: node server.js
+web: make start-backend
+frontend: make start-frontend
