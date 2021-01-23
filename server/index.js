@@ -21,5 +21,6 @@ export default () => {
     },
     templates: path.join(__dirname, '..', 'server', 'views'),
   })
+  
   return app;
 };
