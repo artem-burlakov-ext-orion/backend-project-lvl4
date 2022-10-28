@@ -7,8 +7,6 @@ import addRoutes from './routes/index.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-
-
 export default () => {
   const app = fastify({
     logger: true,
@@ -16,9 +14,7 @@ export default () => {
   addRoutes(app);
 
   app.register(pointOfView, {
-    engine: {
-      pug: Pug,
-    },
+    engine: { pug: Pug },
     templates: path.join(__dirname, '..', 'server', 'views'),
   })
   
